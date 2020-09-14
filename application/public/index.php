@@ -1,12 +1,19 @@
-<html>
+<?php
+echo __DIR__;
+require_once __DIR__ . "/../init/database.php";
+require_once __DIR__ . "/../src/Employees.php";
 
+$employees = Employees::getEmployees();
+
+?>
+<html>
     <head>
         <title>SportsShoes.com PHP Test</title>
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
     </head>
 
     <body>
-        <?php include 'includes/header.inc.php'; ?>
+        <?php include 'includes/header.inc.php';?>
         <div class="content">
             <h1>Employees</h1>
             <table class="table">
