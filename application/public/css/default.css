@@ -1,0 +1,98 @@
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#header {
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo {
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	float: left;
+}
+
+#menu {
+	width: 500px;
+	padding: 0px 0px 0px 10px;
+	margin: 40px 0px 0px 0px;
+	background-color: #c1ded7;
+	float: left;
+	border-radius: 12px;
+	font-variant: all-small-caps;
+}
+
+#menu ul {
+	margin: 0px !important;
+	padding: 0px !important;
+	clear: both;
+}
+
+#menu ul li {
+	list-style: circle;
+	float: left;
+	margin-right: 5px;
+	margin-left: 15px !important;
+	padding: 5px;
+}
+
+#menu a:link,
+#menu a:visited {
+	text-decoration: none;
+	color: #0c0c0c;
+}
+
+.content {
+	padding: 5px;
+	margin: 0px;
+}
+
+.clear_both {
+	clear: both;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	border-bottom: 1px solid #0A246A;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table tr th,
+.table tr td {
+	border: 3px solid #000000;
+}
+
+.table tr th {
+	background-color: #245757;
+	color: #ffffff;
+	padding: 5px;
+}
+
+form input[type=text] {
+	background-color: #E5F2E9;
+	width: 99%;
+	border: 2px solid #0A246A;
+	padding: 5px;
+}
+
+form .button {
+	background-color: #47EAF0;
+	width: 99%;
+	border: 2px solid #0A246A;
+	padding: 5px;
+	border-radius: 12px;
+}
+
+form select {
+	background-color: #E5F2E9;
+	width: 99%;
+	border: 2px solid #0A246A;
+	padding: 5px;
+}
