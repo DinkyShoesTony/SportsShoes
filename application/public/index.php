@@ -1,5 +1,4 @@
 <?php
-echo __DIR__;
 require_once __DIR__ . "/../init/database.php";
 require_once __DIR__ . "/../src/Employees.php";
 
@@ -26,16 +25,18 @@ $employees = Employees::getEmployees();
                     </tr>
                 </thead>
                 <tbody>
+                    <?php foreach ($employees as $employee): ?>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><?=$employee->firstname;?></td>
+                        <td><?=$employee->lastname;?></td>
+                        <td><?=$employee->company_name;?></td>
+                        <td><?=$employee->email_address;?></td>
                     </tr>
+                    <?php endforeach;?>
                 </tbody>
             </table>
         </div>
-        <script src="js/scripts.js"></script>
+        <!-- <script src="js/scripts.js"></script> -->
     </body>
 
 </html>

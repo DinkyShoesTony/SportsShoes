@@ -4,7 +4,7 @@ $GLOBALS['database'] = [
     "port" => 3306,
     "user" => "",
     "pass" => "",
-    "db"   => "",
+    "db"   => "SportsShoesTest",
 ];
 $GLOBALS['database']['dsn'] = "mysql:host={$GLOBALS['database']['host']};
 port={$GLOBALS['database']['port']};
