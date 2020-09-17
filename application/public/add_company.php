@@ -10,6 +10,11 @@ if (!empty($_POST["submit"]) && $_POST["submit"] == "Add") {
     try {
         Company::addCompany(trim($_POST["company_name"]), trim($_POST['company_location']));
 
+    } catch (PDOException $e) {
+
+        // OPTIONAL: sanitize DB errors to increase security
+        $errors = "Database Exception: Possible duplicate entry.";
+
     } catch (Exception $e) {
 
         // Error when trying to save company to database. Capture the error.
